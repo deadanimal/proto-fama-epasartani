@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFailsTable extends Migration
+class UpdateAllTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,7 @@ class CreateFailsTable extends Migration
      */
     public function up()
     {
-        Schema::create('fails', function (Blueprint $table) {
-            $table->id('fail_id');
-            $table->string('jenis_fail');
-            $table->timestamps();
-        });
+        //
     }
 
     /**
@@ -27,6 +23,6 @@ class CreateFailsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('fails');
+        //
     }
 }

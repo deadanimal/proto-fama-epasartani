@@ -12,13 +12,36 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.logmasuk');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('/permohonan', function () {
+    return view('pages.permohonan');
+});
 
-require __DIR__.'/auth.php';
+Route::get('/alatan', function () {
+    return view('pages.alatan');
+});
+
+Route::get('/bakul', function () {
+    return view('pages.bakul');
+});
+
+Route::get('/pembayaran', function () {
+    return view('pages.pembayaran');
+});
+
+Route::get('/pentadbiran', function () {
+    return view('pages.pentadbiran');
+});
+
+Route::get('/profil', function () {
+    return view('pages.pengurusanprofil');
+});
+
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth'])->name('dashboard');
+
+// require __DIR__.'/auth.php';
