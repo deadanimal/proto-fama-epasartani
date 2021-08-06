@@ -20,9 +20,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" sizes="76x76" href="../../../assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="../../../assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="../../assets/img/jata-logo.png">
     <title>
-        Soft UI Dashboard PRO by Creative Tim
+        FAMA - ePasartani
     </title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -102,14 +102,14 @@
                     </a>
                 </li>
 
-                <!-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="/pentadbiran">
                         <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="fas fa-building me-sm-1 text-dark"></i>
                         </div>
                         <span class="nav-link-text ms-1">Pentadbiran</span>
                     </a>
-                </li> -->
+                </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="/profil">

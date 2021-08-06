@@ -10,7 +10,7 @@
                 <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
                     <li class="breadcrumb-item text-sm">
                         <a class="opacity-3 text-dark" href="javascript:;">
-                        <i class="fas fa-building me-sm-1 text-dark"></i>
+                            <i class="fas fa-building me-sm-1 text-dark"></i>
                         </a>
                     </li>
                     <!-- <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li> -->
@@ -135,7 +135,152 @@
     <!-- End Navbar -->
     <div class="container-fluid py-4">
         <div class="row">
-            
+            <div class="col-xl-12 p-3">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h5>Jumlah Permohonan</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-flush" id="datatable-basic">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>Permohonan ID</th>
+                                        <th>No. Syarikat</th>
+                                        <th>Nama Syarikat</th>
+                                        <th>Nama Pemilik</th>
+                                        <th>Lokasi</th>
+                                        <th>Tarikh Daftar</th>
+                                        <th>Lampiran</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>AX317</td>
+                                        <td>3136</td>
+                                        <td>Megah Holding Sdn. Bhd.</td>
+                                        <td>Salim Salman</td>
+                                        <td>Selangor</td>
+                                        <td>2020/04/25</td>
+                                        <td>
+                                            <button class="btn btn-icon btn-success btn-sm" type="button" title="Fail">
+                                                <span class="btn-inner--icon">
+                                                    <i class="fas fa-file-download"> </i>
+                                                </span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>AB245</td>
+                                        <td>4689</td>
+                                        <td>Permata Sinar Sdn. Bhd.</td>
+                                        <td>Harun Faisal</td>
+                                        <td>Kuala Lumpur</td>
+                                        <td>2020/02/11</td>
+                                        <td>
+                                            <button class="btn btn-icon btn-success btn-sm" type="button" title="Fail">
+                                                <span class="btn-inner--icon">
+                                                    <i class="fas fa-file-download"> </i>
+                                                </span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>JS461</td>
+                                        <td>5701</td>
+                                        <td>Expert Trio Sdn. Bhd.</td>
+                                        <td>Tan Cheng Lock</td>
+                                        <td>Selangor</td>
+                                        <td>2020/10/01</td>
+                                        <td>
+                                            <button class="btn btn-icon btn-success btn-sm" type="button" title="Fail">
+                                                <span class="btn-inner--icon">
+                                                    <i class="fas fa-file-download"> </i>
+                                                </span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-6 p-3">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h5>Jumlah Bayaran (Pembelian Alatan)</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="chart">
+                            <div class="amchart" id="chartdivtadbir1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 p-3">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h5>Jumlah Bayaran (Kategori Perkhidmatan)</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="chart">
+                            <div class="amchart" id="chartdivtadbir2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-6 p-3">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h5>Jumlah Bayaran (Pembelian Alatan)</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="chart">
+                            <div class="amchart" id="chartdivtadbir3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 p-3">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h5>Jumlah Bayaran (Kategori Perkhidmatan)</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="chart">
+                            <div class="amchart" id="chartdivtadbir4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer class="footer pt-3  ">
             <div class="container-fluid">
@@ -196,6 +341,261 @@
         };
         reader.readAsDataURL(input.files[0]);
     };
+</script>
+
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/dataviz.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+<script>
+    am4core.ready(function() {
+
+        // Themes begin
+        am4core.useTheme(am4themes_dataviz);
+        am4core.useTheme(am4themes_animated);
+        // Themes end
+
+        // Create chart instance
+        var chart = am4core.create("chartdivtadbir1", am4charts.XYChart);
+
+        // Add data
+        chart.data = [{
+            "country": "Meja",
+            "visits": 202
+        }, {
+            "country": "Khemah",
+            "visits": 188
+        }, {
+            "country": "Mesin",
+            "visits": 180
+        }, {
+            "country": "Kerusi",
+            "visits": 132
+        }, {
+            "country": "Baja",
+            "visits": 112
+        }, {
+            "country": "Anak Pokok",
+            "visits": 111
+        }, ];
+
+        // Create axes
+
+        var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+        categoryAxis.dataFields.category = "country";
+        categoryAxis.renderer.grid.template.location = 0;
+        categoryAxis.renderer.minGridDistance = 30;
+
+        categoryAxis.renderer.labels.template.adapter.add("dy", function(dy, target) {
+            if (target.dataItem && target.dataItem.index & 2 == 2) {
+                return dy + 25;
+            }
+            return dy;
+        });
+
+        var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+
+        // Create series
+        var series = chart.series.push(new am4charts.ColumnSeries());
+        series.dataFields.valueY = "visits";
+        series.dataFields.categoryX = "country";
+        series.name = "Visits";
+        series.columns.template.tooltipText = "{categoryX}: [bold]{valueY}[/]";
+        series.columns.template.fillOpacity = .8;
+
+        var columnTemplate = series.columns.template;
+        columnTemplate.strokeWidth = 2;
+        columnTemplate.strokeOpacity = 1;
+
+    }); // end am4core.ready()
+
+    am4core.ready(function() {
+
+        // Themes begin
+        am4core.useTheme(am4themes_dataviz);
+        am4core.useTheme(am4themes_animated);
+        // Themes end
+
+        // Create chart instance
+        var chart = am4core.create("chartdivtadbir2", am4charts.XYChart);
+        chart.scrollbarX = new am4core.Scrollbar();
+
+        // Add data
+        chart.data = [{
+            "country": "Pembuatan",
+            "visits": 210
+        }, {
+            "country": "Perkilangan",
+            "visits": 188
+        }, {
+            "country": "Pertanian",
+            "visits": 180
+        }, {
+            "country": "Teknologi Maklumat",
+            "visits": 132
+        }, {
+            "country": "Pemakanan",
+            "visits": 112
+        }, {
+            "country": "Bahan Kimia",
+            "visits": 111
+        }, ];
+
+        // Create axes
+        var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+        categoryAxis.dataFields.category = "country";
+        categoryAxis.renderer.grid.template.location = 0;
+        categoryAxis.renderer.minGridDistance = 30;
+        categoryAxis.renderer.labels.template.horizontalCenter = "right";
+        categoryAxis.renderer.labels.template.verticalCenter = "middle";
+        categoryAxis.renderer.labels.template.rotation = 270;
+        categoryAxis.tooltip.disabled = true;
+        categoryAxis.renderer.minHeight = 110;
+
+        var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+        valueAxis.renderer.minWidth = 50;
+
+        // Create series
+        var series = chart.series.push(new am4charts.ColumnSeries());
+        series.sequencedInterpolation = true;
+        series.dataFields.valueY = "visits";
+        series.dataFields.categoryX = "country";
+        series.tooltipText = "[{categoryX}: bold]{valueY}[/]";
+        series.columns.template.strokeWidth = 0;
+
+        series.tooltip.pointerOrientation = "vertical";
+
+        series.columns.template.column.cornerRadiusTopLeft = 10;
+        series.columns.template.column.cornerRadiusTopRight = 10;
+        series.columns.template.column.fillOpacity = 0.8;
+
+        // on hover, make corner radiuses bigger
+        var hoverState = series.columns.template.column.states.create("hover");
+        hoverState.properties.cornerRadiusTopLeft = 0;
+        hoverState.properties.cornerRadiusTopRight = 0;
+        hoverState.properties.fillOpacity = 1;
+
+        series.columns.template.adapter.add("fill", function(fill, target) {
+            return chart.colors.getIndex(target.dataItem.index);
+        });
+
+        // Cursor
+        chart.cursor = new am4charts.XYCursor();
+
+    }); // end am4core.ready()
+
+    am4core.ready(function() {
+
+        // Themes begin
+        am4core.useTheme(am4themes_dataviz);
+        am4core.useTheme(am4themes_animated);
+        // Themes end
+
+        // Create chart instance
+        var chart = am4core.create("chartdivtadbir3", am4charts.PieChart);
+
+        // Add data
+        chart.data = [{
+            "country": "Jualan",
+            "litres": 501.9
+        }, {
+            "country": "Jenis pasar",
+            "litres": 301.9
+        }, {
+            "country": "Jenis kesalahan",
+            "litres": 201.1
+        }, {
+            "country": "Naziran",
+            "litres": 165.8
+        }, ];
+
+        // Add and configure Series
+        var pieSeries = chart.series.push(new am4charts.PieSeries());
+        pieSeries.dataFields.value = "litres";
+        pieSeries.dataFields.category = "country";
+        pieSeries.slices.template.stroke = am4core.color("#fff");
+        pieSeries.slices.template.strokeOpacity = 1;
+
+        // This creates initial animation
+        pieSeries.hiddenState.properties.opacity = 1;
+        pieSeries.hiddenState.properties.endAngle = -90;
+        pieSeries.hiddenState.properties.startAngle = -90;
+
+        chart.hiddenState.properties.radius = am4core.percent(0);
+
+
+    }); // end am4core.ready()
+
+    am4core.ready(function() {
+
+        // Themes begin
+        am4core.useTheme(am4themes_dataviz);
+        am4core.useTheme(am4themes_animated);
+        // Themes end
+
+        // Create chart instance
+        var chart = am4core.create("chartdivtadbir4", am4charts.PieChart);
+
+        // Add and configure Series
+        var pieSeries = chart.series.push(new am4charts.PieSeries());
+        pieSeries.dataFields.value = "litres";
+        pieSeries.dataFields.category = "country";
+
+        // Let's cut a hole in our Pie chart the size of 30% the radius
+        chart.innerRadius = am4core.percent(30);
+
+        // Put a thick white border around each Slice
+        pieSeries.slices.template.stroke = am4core.color("#fff");
+        pieSeries.slices.template.strokeWidth = 2;
+        pieSeries.slices.template.strokeOpacity = 1;
+        pieSeries.slices.template
+            // change the cursor on hover to make it apparent the object can be interacted with
+            .cursorOverStyle = [{
+                "property": "cursor",
+                "value": "pointer"
+            }];
+
+        pieSeries.alignLabels = false;
+        pieSeries.labels.template.bent = true;
+        pieSeries.labels.template.radius = 3;
+        pieSeries.labels.template.padding(0, 0, 0, 0);
+
+        pieSeries.ticks.template.disabled = true;
+
+        // Create a base filter effect (as if it's not there) for the hover to return to
+        var shadow = pieSeries.slices.template.filters.push(new am4core.DropShadowFilter);
+        shadow.opacity = 0;
+
+        // Create hover state
+        var hoverState = pieSeries.slices.template.states.getKey("hover"); // normally we have to create the hover state, in this case it already exists
+
+        // Slightly shift the shadow and make it more prominent on hover
+        var hoverShadow = hoverState.filters.push(new am4core.DropShadowFilter);
+        hoverShadow.opacity = 0.7;
+        hoverShadow.blur = 5;
+
+        // Add a legend
+        chart.legend = new am4charts.Legend();
+
+        chart.data = [{
+            "country": "Stok 1",
+            "litres": 501.9
+        }, {
+            "country": "Stok 2",
+            "litres": 165.8
+        }, {
+            "country": "Stok 3",
+            "litres": 139.9
+        }, {
+            "country": "Stok 4",
+            "litres": 128.3
+        }, {
+            "country": "Stok 5",
+            "litres": 99
+        }, ];
+
+    }); // end am4core.ready()
 </script>
 
 @stop

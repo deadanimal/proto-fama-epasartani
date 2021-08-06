@@ -164,7 +164,65 @@
                     </div>
 
                     <div class="card-body">
-                        <table id="tablealatan1" class="table table-striped" style="width:100%">
+                        <div class="table-responsive">
+                            <table class="table table-flush" id="datatable-basic">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>Alatan ID</th>
+                                        <th>Nama Alatan</th>
+                                        <th>Harga</th>
+                                        <th>Baki Stok</th>
+                                        <th>Kuantiti</th>
+                                        <th>Imej Peralatan</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>AX317</td>
+                                        <td>Khemah</td>
+                                        <td>RM 235.00</td>
+                                        <td>247</td>
+                                        <td>34</td>
+                                        <td>
+                                            <button class="btn btn-icon btn-success btn-sm" type="button" title="Fail">
+                                                <span class="btn-inner--icon">
+                                                    <i class="fas fa-eye"> </i>
+                                                </span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>SE124</td>
+                                        <td>Meja</td>
+                                        <td>RM 634.00</td>
+                                        <td>614</td>
+                                        <td>155</td>
+                                        <td>
+                                            <button class="btn btn-icon btn-success btn-sm" type="button" title="Fail">
+                                                <span class="btn-inner--icon">
+                                                    <i class="fas fa-eye"> </i>
+                                                </span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>KS682</td>
+                                        <td>Mesin</td>
+                                        <td>RM 860.00</td>
+                                        <td>25</td>
+                                        <td>4</td>
+                                        <td>
+                                            <button class="btn btn-icon btn-success btn-sm" type="button" title="Fail">
+                                                <span class="btn-inner--icon">
+                                                    <i class="fas fa-eye"> </i>
+                                                </span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- <table id="tablealatan1" class="table table-striped" style="width:100%">
                             <thead>
                                 <tr>
                                     <th>Alatan ID</th>
@@ -219,7 +277,7 @@
                                     </td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table> -->
                     </div>
                 </div>
             </div>
@@ -365,6 +423,13 @@
 <script src="../../assets/js/plugins/jkanban/jkanban.js"></script>
 <script src="../../assets/js/plugins/choices.min.js"></script>
 <script src="../../assets/js/plugins/dropzone.min.js"></script>
+<script src="https://demos.creative-tim.com/test/soft-ui-dashboard-pro/assets/js/plugins/datatables.js" type="text/javascript"></script>
+<script type="text/javascript">
+    const dataTableBasic = new simpleDatatables.DataTable("#datatable-basic", {
+        searchable: false,
+        fixedHeight: true
+    });
+</script>
 <!-- amchart -->
 <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
 <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>

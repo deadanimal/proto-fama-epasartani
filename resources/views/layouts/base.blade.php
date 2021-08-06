@@ -83,6 +83,26 @@
             width: 100%;
             height: 500px;
         }
+
+        #chartdivtadbir1 {
+            width: 100%;
+            height: 500px;
+        }
+
+        #chartdivtadbir2 {
+            width: 100%;
+            height: 500px;
+        }
+
+        #chartdivtadbir3 {
+            width: 100%;
+            height: 500px;
+        }
+
+        #chartdivtadbir4 {
+            width: 100%;
+            height: 500px;
+        }
     </style>
     <script>
         (function(a, s, y, n, c, h, i, d, e) {
@@ -210,14 +230,14 @@
                     </a>
                 </li>
 
-                <!-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="/pentadbiran">
                         <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="fas fa-building me-sm-1 text-dark"></i>
                         </div>
                         <span class="nav-link-text ms-1">Pentadbiran</span>
                     </a>
-                </li> -->
+                </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="/profil">

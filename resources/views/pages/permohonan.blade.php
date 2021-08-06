@@ -180,66 +180,68 @@
                     </div>
 
                     <div class="card-body">
-                        <table id="example" class="table table-striped" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>Permohonan ID</th>
-                                    <th>No. Syarikat</th>
-                                    <th>Nama Syarikat</th>
-                                    <th>Nama Pemilik</th>
-                                    <th>Lokasi</th>
-                                    <th>Tarikh Daftar</th>
-                                    <th>Lampiran</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>AX317</td>
-                                    <td>3136</td>
-                                    <td>Megah Holding Sdn. Bhd.</td>
-                                    <td>Salim Salman</td>
-                                    <td>Selangor</td>
-                                    <td>2020/04/25</td>
-                                    <td>
-                                        <button class="btn btn-icon btn-success btn-sm" type="button" title="Fail">
-                                            <span class="btn-inner--icon">
-                                                <i class="fas fa-file-download"> </i>
-                                            </span>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>AB245</td>
-                                    <td>4689</td>
-                                    <td>Permata Sinar Sdn. Bhd.</td>
-                                    <td>Harun Faisal</td>
-                                    <td>Kuala Lumpur</td>
-                                    <td>2020/02/11</td>
-                                    <td>
-                                        <button class="btn btn-icon btn-success btn-sm" type="button" title="Fail">
-                                            <span class="btn-inner--icon">
-                                                <i class="fas fa-file-download"> </i>
-                                            </span>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>JS461</td>
-                                    <td>5701</td>
-                                    <td>Expert Trio Sdn. Bhd.</td>
-                                    <td>Tan Cheng Lock</td>
-                                    <td>Selangor</td>
-                                    <td>2020/10/01</td>
-                                    <td>
-                                        <button class="btn btn-icon btn-success btn-sm" type="button" title="Fail">
-                                            <span class="btn-inner--icon">
-                                                <i class="fas fa-file-download"> </i>
-                                            </span>
-                                        </button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="table-responsive">
+                            <table class="table table-flush" id="datatable-basic">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>Permohonan ID</th>
+                                        <th>No. Syarikat</th>
+                                        <th>Nama Syarikat</th>
+                                        <th>Nama Pemilik</th>
+                                        <th>Lokasi</th>
+                                        <th>Tarikh Daftar</th>
+                                        <th>Lampiran</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>AX317</td>
+                                        <td>3136</td>
+                                        <td>Megah Holding Sdn. Bhd.</td>
+                                        <td>Salim Salman</td>
+                                        <td>Selangor</td>
+                                        <td>2020/04/25</td>
+                                        <td>
+                                            <button class="btn btn-icon btn-success btn-sm" type="button" title="Fail">
+                                                <span class="btn-inner--icon">
+                                                    <i class="fas fa-file-download"> </i>
+                                                </span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>AB245</td>
+                                        <td>4689</td>
+                                        <td>Permata Sinar Sdn. Bhd.</td>
+                                        <td>Harun Faisal</td>
+                                        <td>Kuala Lumpur</td>
+                                        <td>2020/02/11</td>
+                                        <td>
+                                            <button class="btn btn-icon btn-success btn-sm" type="button" title="Fail">
+                                                <span class="btn-inner--icon">
+                                                    <i class="fas fa-file-download"> </i>
+                                                </span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>JS461</td>
+                                        <td>5701</td>
+                                        <td>Expert Trio Sdn. Bhd.</td>
+                                        <td>Tan Cheng Lock</td>
+                                        <td>Selangor</td>
+                                        <td>2020/10/01</td>
+                                        <td>
+                                            <button class="btn btn-icon btn-success btn-sm" type="button" title="Fail">
+                                                <span class="btn-inner--icon">
+                                                    <i class="fas fa-file-download"> </i>
+                                                </span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -290,6 +292,13 @@
 <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
 <script src="https://cdn.amcharts.com/lib/4/themes/dataviz.js"></script>
 <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+<script src="https://demos.creative-tim.com/test/soft-ui-dashboard-pro/assets/js/plugins/datatables.js" type="text/javascript"></script>
+<script type="text/javascript">
+    const dataTableBasic = new simpleDatatables.DataTable("#datatable-basic", {
+        searchable: false,
+        fixedHeight: true
+    });
+</script>
 
 <script>
     (document).ready(function() {
